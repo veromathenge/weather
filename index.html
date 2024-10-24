@@ -3,29 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Weather App</title>
   </head>
-  <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city... " required />
-        <input type="submit" value="search" />
-      </form>
-    </header>
-    <main><h1>Weather</h1></main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/veromathenge" target="_blank"
-        >Veronica Wangui</a
-      >
-      is open-sourced on
-      <a href="https://github.com/veromathenge/weather" target="_blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://weather-test-shecodes.netlify.app/" target="_blank"
-        >Netifly</a
-      >
-    </footer>
+
+  <body class="roboto-regular">
+    <div class="container">
+      <header>
+        <form>
+          <input type="search" placeholder="Enter a city... " required />
+          <input type="submit" value="search" />
+        </form>
+      </header>
+      <main>
+        <div class="day-info">
+          <p id="day">Tuesday</p>
+          <p id="date">15 Jan 2019</p>
+          <p id="city">📍Kenya</p>
+        </div>
+        <div class="temp-info">
+          <p id="emoji">☀️</p>
+          <p>29°C</p>
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/veromathenge" target="_blank"
+          >Veronica Wangui</a
+        >
+        is open-sourced on
+        <a href="https://github.com/veromathenge/weather" target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://weather-test-shecodes.netlify.app/" target="_blank"
+          >Netifly</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
