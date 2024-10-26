@@ -48,24 +48,25 @@ main {
   padding: 30px 0;
 }
 .city {
-  font-size: 30px;
+  font-size: 25px;
 
   font-weight: bold;
 }
 .weather-app-icon {
-  font-size: 44px;
-  margin-top: 22px;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-left: 40px;
 }
 
 .weather-app-temp {
-  font-size: 88px;
+  font-size: 70px;
   margin-left: 10px;
   font-weight: bold;
 }
 
-.weatehr-app-unit {
-  margin-top: 16px;
-  font-size: 28px;
+.weather-app-unit {
+  margin-top: 6px;
+  font-size: 20px;
 }
 .temp-container {
   display: flex;
