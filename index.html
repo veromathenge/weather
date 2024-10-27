@@ -15,50 +15,61 @@
   </head>
 
   <body class="roboto-regular">
-    <div class="container">
-      <header>
-        <form id="search-form">
-          <input
-            type="search"
-            placeholder="Enter a city... "
-            required
-            id="search-form-input"
-          />
-          <input type="submit" value="search" class="search-form-button" />
-        </form>
-      </header>
-      <main>
-        <div class="weather-app-details">
-          <div class="day-info">
-            
-            <div id="city">📍</div>
-            <div class="day">Tuesday</div>
-            <div class="date">15 Jan 2019</div>
+    <div class="wrapper">
+      <div class="container">
+        <header>
+          <form id="search-form">
+            <input
+              type="search"
+              placeholder="Enter a city... "
+              required
+              id="search-form-input"
+              class="search-form-input"
+            />
+            <input type="submit" value="search" class="search-form-button" />
+          </form>
+        </header>
+        <main>
+          <div class="weather-app-details">
+            <div class="day-info">
+              <div id="city">📍</div>
+
+              <div id="time"></div>
+            </div>
+            <div class="temp-container">
+              <div id="icon"></div>
+              <div class="weather-app-temp" id="temperature"></div>
+              <div class="weather-app-unit">°C</div>
+            </div>
           </div>
-          <div class="temp-container">
-          <div class="weather-app-icon">
-           ☀️
-          </div>
-          <div class="weather-app-temp" id="temperature"></div>
-          <div class="weather-app-unit">°C</div>
-          </div>
-       
-      </main>
-      <footer>
-        This project was coded by
-        <a href="https://github.com/veromathenge" target="_blank"
-          >Veronica Wangui</a
-        >
-        is open-sourced on
-        <a href="https://github.com/veromathenge/weather" target="_blank"
-          >GitHub</a
-        >
-        and hosted on
-        <a href="https://weather-test-shecodes.netlify.app/" target="_blank"
-          >Netifly</a
-        >
-      </footer>
+        </main>
+      </div>
+      <div class="container-sidebar">
+        <div>CONDITION</div>
+        <div id="condition-unit"></div>
+        <div>HUMIDITY</div>
+        <div id="humidity-unit"></div>
+        <div>WIND</div>
+        <div id="wind-unit"></div>
+        <br />
+        <br />
+        <footer>
+          This project was coded by
+          <a href="https://github.com/veromathenge" target="_blank"
+            >Veronica Wangui</a
+          >
+          is open-sourced on
+          <a href="https://github.com/veromathenge/weather" target="_blank"
+            >GitHub</a
+          >
+          and hosted on
+          <a href="https://weather-test-shecodes.netlify.app/" target="_blank"
+            >Netifly</a
+          >
+        </footer>
+      </div>
     </div>
-<script src="script.js"></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
