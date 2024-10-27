@@ -25,23 +25,33 @@ header {
   display: flex;
   flex-direction: column;
 }
+
+.search-component {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .search-form-input {
   background-color: #f9f7fe;
   border: none;
-  border-radius: 6px;
-  width: 40%;
+  width: 100%;
   font-size: 16px;
-  padding: 15px 20px;
+  padding: 0px 15px;
+  height: 40px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
 
 .search-form-button {
   background: #385170;
-  padding: 15px 30px;
   border: none;
   font-size: 16px;
-  margin-left: 5px;
-  border-radius: 6px;
   color: white;
+  height: 40px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 .weather-app-details {
   display: flex;
@@ -75,14 +85,61 @@ main {
 }
 .container-sidebar {
   width: 100%;
-  min-width: 500px;
+  min-width: 300px;
   background-color: #000000;
   padding: 20px 40px;
   position: relative;
-  padding-bottom: 200px;
   color: #ffffff;
 }
 
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  padding: 20px 5px;
+  background: #262e3b;
+  border-radius: 10px;
+}
+.weather-forecast-date {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
+.weather-forecast-temperatures {
+  text-align: center;
+  color: #2aadf8;
+  display: flex;
+  justify-content: center;
+}
+
+.weather-forcast-temperaure {
+  padding: 0 8px;
+}
+.weather-forecast-icon {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+.one {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cocoo {
+  color: #ffffff;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
 footer {
   border-top: 1px solid #f9f7fe;
   padding: 10px 0 0 0;
@@ -90,6 +147,7 @@ footer {
   font-size: 15px;
   color: rgba(0, 0, 0, 0.6);
   color: #ffffff;
+  margin-top: 120px;
 }
 
 .wrapper {
@@ -98,4 +156,10 @@ footer {
   min-width: 900px;
   overflow: hidden;
   border-radius: 16px;
+}
+
+.weather-data {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
