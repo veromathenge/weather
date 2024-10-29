@@ -105,21 +105,22 @@ main {
   text-align: center;
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 10px;
+}
+.weather-forecast-temperature {
+  padding: 0 10px;
 }
 .weather-forecast-temperatures {
   text-align: center;
   color: #2aadf8;
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 
-.weather-forcast-temperaure {
-  padding: 0 8px;
-}
 .weather-forecast-icon {
-  width: 90%;
-  display: block;
-  margin: 0 auto;
+  font-size: 38px;
+  text-align: center;
 }
 
 .one {
